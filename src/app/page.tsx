@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <p className="mt-16 text-sm text-gray-500">
-          © 2025 {new Date().getFullYear()} [你的名字]. Built with Next.js
+          © 2025 {new Date().getFullYear()} [Dothyn]. Built with Jack.
         </p>
       </div>
     </main>
