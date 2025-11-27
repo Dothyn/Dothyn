@@ -8,13 +8,13 @@ export default function Home() {
         </div>
         
         <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-          Hello,my name is Jack.
+          Hello,my name is Lee.
         </h1>
         
         <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-12">
-          a person study code for beggin<br/>
-          这是我亲手搭建的第一个网站<br/>
-          未来我要用代码改变世界
+          a begginner study build website<br/>
+          this is my first website<br/>
+          
         </p>
 
         <div className="flex justify-center gap-8 text-lg">
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <p className="mt-16 text-sm text-gray-500">
-          © 2025 {new Date().getFullYear()} [Dothyn]. Built with Jack.
+          © 2025 {new Date().getFullYear()} [Dothyn]. Built with Lee.
         </p>
       </div>
     </main>
