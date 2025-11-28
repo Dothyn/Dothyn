@@ -1,32 +1,51 @@
+import Image from "next/image";
+
 export default function Home() {
-  {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-900 flex items-center justify-center px-6">
-      <div className="text-center max-w-2xl">
-        <div className="mb-8">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 shadow-2xl" />
-        </div>
-        
-        <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-          Hello,my name is Lee.
-        </h1>
-        
-        <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-12">
-          a begginner study build website<br/>
-          this is my first website<br/>
-          
-        </p>
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-900 px-6 relative">
 
-        <div className="flex justify-center gap-8 text-lg">
-          <a href="https://github.com/你的GitHub名" className="hover:text-blue-600 transition">GitHub</a>
-          <a href="mailto:你的邮箱@gmail.com" className="hover:text-blue-600 transition">Email</a>
-          <a href="https://twitter.com/xxx" className="hover:text-blue-600 transition">Twitter</a>
-        </div>
+      {/* === 中心区域：LOGO 精准居中，文字上下包围 === */}
+      <section className="flex items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center text-center">
 
-        <p className="mt-16 text-sm text-gray-500">
-          © 2025 {new Date().getFullYear()} [Dothyn]. Built with Lee.
-        </p>
-      </div>
+          {/* LOGO 上方文字 */}
+          <div className="mb-4">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white -mt-1">
+              Dothyn — Creat What You Want!
+            </h2>
+          </div>
+
+          {/* LOGO 正中 */}
+          <div className="flex items-center justify-center">
+            <Image
+              src="/LOGO.png"
+              width={200}
+              height={200}
+              alt="Centered LOGO"
+              className="rounded-full ring-8 ring-white/10 shadow-2xl transform transition-transform duration-300 hover:scale-[1.03]"
+              priority
+            />
+          </div>
+
+          {/* LOGO 下方文字 */}
+          <div className="mt-4">
+            <p className="text-2xl font-semibold text-gray-900 dark:text-white -mt-1">
+              D,1,2,3 — Everything.
+            </p>
+
+            <div className="mt-4 flex justify-center">
+              <a
+                href="https://github.com/Dothyn"
+                className="text-sm font-medium px-5 py-2 rounded-full bg-white/10 dark:bg-white/5 hover:bg-white/20 dark:hover:bg-white/10 transition shadow"
+              >
+                Visit My GitHub →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
-}}
+}
